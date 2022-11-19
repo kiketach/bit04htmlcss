@@ -1,0 +1,30 @@
+
+.menu-btn{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+}
+.menu-check{
+  display: none;
+  }
+
+  .menu-check:checked + .links {
+    transform: translateY(0%);  
+  }
+
+.links{
+  transform: translateX(-110%);
+  transition: transform 1s;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .links{
+    transform: translateY(0);
+  }
+
+}
