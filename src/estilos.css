@@ -53,10 +53,10 @@ table.cronologia td:first-child{background-color:#eafbf6;color:#030404;text-alig
 
 
 /* Footer format  */
-#footer{width:100%;display:block;bottom:0;clear:both;text-align:center;padding: 5px;color:rgb(9, 1, 1)}
-#footer{background:lightgray}
-.go-top{text-align:center;font-size:10%;margin:10px 0}
-.go-top a span{font-size:60px;line-height:70px;padding-left:10px}
+.fnavbar {
+  position: sticky;
+  bottom: 0;
+}
 
 
 @media screen and (min-width: 768px){
@@ -67,9 +67,10 @@ table.cronologia td:first-child{background-color:#eafbf6;color:#030404;text-alig
   img.align-right{display:block;margin:20px auto}
 
 /* NAVBAR */
-
   .navbar {
     background: #FFCD48;
+    position: sticky;
+    top: 0;
 }
 
 .navbar a {
@@ -123,8 +124,3 @@ table.cronologia td:first-child{background-color:#eafbf6;color:#030404;text-alig
 	.contenedor-imagen {
 		height: 50vh;
 	}
-
-	main .contenedor {
-		flex-direction: column;
-	}
-}
