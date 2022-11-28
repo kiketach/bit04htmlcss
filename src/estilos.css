@@ -1,42 +1,74 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
-@media screen and (min-width: 480px){
+body {
+  background-color: #ededed
+}
 
-  /* Padding Main  */
-.content{padding:20px;}}
+.home {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.in-flex {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.in-flex:first-child {
+  flex: 2;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 0px;
+}
+
+.in-flex div {
+  padding: 25px;
+  margin: 10px;
+  background-color: white;
+  text-align: justify;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 /* Organize buttoms  */
 #menu:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 
 /* Colors and effects in menu */
 #menu li{float:left;-webkit-border-radius:50px;-moz-border-radius:50px;-ms-border-radius:50px;-o-border-radius:50px;border-radius:12px;padding:5px;width:33%;text-align:center;}
-#menu li a{color:#edf2f4;display:block;text-decoration:none}
-#menu li .menu-icon{display:block;margin:0 auto;background:#000000;width:40px;height:40px;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;padding:6px 0px}
+#menu li a{color:#0a78a4;display:block;text-decoration:none}
+#menu li .menu-icon{display:block;margin:0 auto;background:#ededed;width:40px;height:40px;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;padding:6px 0px}
 
 /* Title fixed in page  */
-h1{font-family:Rubik Distressed;font-size:33px;font-weight:normal;line-height:37.8px;margin:8px 0 8px 0;padding-bottom:0px;color: #ccc;}
+h1{font-family:Rubik Distressed;font-size:33px;font-weight:normal;line-height:37.8px;margin:8px 0 8px 0;padding-bottom:0px;color: rgb(15, 1, 1);}
 
 /* Page format  */
-#main p{font-family:Cinzel; font-size: small; margin:15px 0;line-height:21px;text-align:justify;text-justify:inter-word;color: #ccc;}
-
-/* Table format  */
-table{margin:20px 0;width:100%}td{line-height:21px;vertical-align:top;padding:2px 5px;color: #ccc;}
-table.cronologia{margin-top:20px;border-top:1px #f0f1f1 solid}
-table.cronologia td{padding:5px 8px;border-bottom:1px #d4f7ed solid}
-table.cronologia td:first-child{background-color:#eafbf6;color:#030404;text-align:center;font-size:85%;font-weight:bold;border-right:1px #e4ecea solid}
+#main p{font-family:Cinzel; font-size: small; margin:15px 0;line-height:21px;text-align:justify;text-justify:inter-word;color: rgb(15, 1, 1);}
 
 /* Photos format  */
 div.fotos .piefotos{display:block;padding-bottom:30px;padding-top:10px}
 div.fotos a img{border:8px #fff solid;-webkit-box-shadow:0px 0px 20px #ccc;-moz-box-shadow:0px 0px 20px #ccc;box-shadow:0px 0px 20px #ccc;max-width:100%}
 
+/* Table format  */
+table{margin:20px 0;width:100%}td{line-height:21px;vertical-align:top;padding:2px 5px;color: rgb(9, 7, 7);}
+table.cronologia{margin-top:20px;border-top:1px #f0f1f1 solid}
+table.cronologia td{padding:5px 8px;border-bottom:1px #d4f7ed solid}
+table.cronologia td:first-child{background-color:#eafbf6;color:#030404;text-align:center;font-size:85%;font-weight:bold;border-right:1px #e4ecea solid}
+
+
 /* Footer format  */
-#footer{width:100%;display:block;bottom:0;clear:both;text-align:center;padding: 5px;color:rgb(255, 255, 255)}
-#footer{background:#212020}
+#footer{width:100%;display:block;bottom:0;clear:both;text-align:center;padding: 5px;color:rgb(9, 1, 1)}
+#footer{background:lightgray}
 .go-top{text-align:center;font-size:10%;margin:10px 0}
 .go-top a span{font-size:60px;line-height:70px;padding-left:10px}
 
+
 @media screen and (min-width: 768px){
-.go-top{display:none}}
-p.img,p.piefotos,p.pie{margin:20px 0 20px;text-align:center !important;display:block;font-size:80%;line-height:130%}
-p.img img,p.piefotos img,p.pie img{display:block;margin:0 auto;max-width:100%;height:auto}
-p.img span,p.piefotos span,p.pie span{margin-top:12px;display:block;line-height:150%}
-img.align-right{display:block;margin:20px auto}
+  .go-top{display:none}}
+  p.img,p.piefotos,p.pie{margin:20px 0 20px;text-align:center !important;display:block;font-size:80%;line-height:130%}
+  p.img img,p.piefotos img,p.pie img{display:block;margin:0 auto;max-width:100%;height:auto}
+  p.img span,p.piefotos span,p.pie span{margin-top:12px;display:block;line-height:150%}
+  img.align-right{display:block;margin:20px auto}
